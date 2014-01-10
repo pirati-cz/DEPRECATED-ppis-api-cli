@@ -1,0 +1,40 @@
+{
+  "name": "ppis-api-cli",
+  "version": "0.0.1",
+  "description": "Command line interface to Pirate Party Information System",
+  "keywords": [
+    "pirate",
+    "party",
+    "information",
+    "system",
+    "cli",
+    "shell",
+    "api"
+  ],
+  "author": {
+    "name": "Tomáš Klapka",
+    "email": "tomas@klapka.cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:pirati-cz/ppis-api-cli.git"
+  },
+  "license": "LGPL-3.0+",
+  "main": "./index",
+  "bin": {
+    "ppis": "./bin/ppis"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "coffee -o ./lib/ -c ./src/"
+  },
+  "dependencies": {
+    "commander": "~2.1.0",
+    "async": "~0.2.9"
+  },
+  "devDependencies": {
+    "mocha": "~1.16.2",
+    "should": "~2.1.1",
+    "coffee-script": "~1.6.3"
+  }
+}

@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+var BinPPIS = require('../lib/bin_ppis');
+new BinPPIS();
